@@ -254,10 +254,7 @@ export interface FrameBase {
 		...args: any[]
 	): Promise<void>;
 	waitForNavigation(options?: NavigationOptions): Promise<Response>;
-	waitForSelector(
-		selector: string,
-		options?: { visible: boolean; timeout: number },
-	): Promise<void>;
+	waitForSelector(selector: string, options?: { visible: boolean; timeout: number }): Promise<void>;
 }
 
 export interface Frame extends FrameBase {
